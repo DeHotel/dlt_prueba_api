@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.div-boton {
+  margin-top: 10px;
+}
+
+#mensaje {
+  padding: 10px;
+  background-color: red;
+}
+
+button {
+  width: 200px;
+  background-color: aquamarine;
+}
+
+#monto {
+  width: 200px;
+  text-align: center;
+}
+
+#selectMonedas {
+  width: 200px;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: black;
+}
+
+.formulario {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  background-color: gray;
+}
+.formulario-titulo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.divGrafico {
+  width: 800px;
+  height: 600px;
+}
+
+canvas {
+  margin-top: 20px;
+  width: 800px;
+  height: 600px;
+}

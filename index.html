@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cotización monedas" />
+    <meta
+      name="keywords"
+      content="html, javaScript, desafio, latam, cotizador, roberto fernandez"
+    />
+    <meta name="author" content="Roberto Fernández" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Cotizador</title>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+  </head>
+  <body>
+    <!-- CONVERSOR -->
+    <section class="section">
+      <div class="container">
+        <hr />
+        <h1>Conversor de monedas Nacional</h1>
+        <hr />
+        <div class="formulario">
+          <div>
+            <p class="formulario-titulo">Pesos CLP</p>
+            <input type="number" id="monto" class="form-control" />
+          </div>
+          <div>
+            <p>Moneda a convertir:</p>
+            <select
+              class="form-select"
+              id="selectMonedas"
+              onchange="mostrarValor();"
+            ></select>
+          </div>
+          <div class="div-boton">
+            <button
+              class="btn btn-primary"
+              id="btnCalcular"
+              onclick="calcular()"
+            >
+              Cotizar
+            </button>
+          </div>
+          <div>
+            <p>Resultado: <span id="total"></span></p>
+          </div>
+          <div id="divMensaje"></div>
+        </div>
+      </div>
+    </section>
+    <!-- GRAFICO -->
+    <section>
+      <!-- <progress
+        id="progressBar"
+        max="1"
+        value="0"
+        style="width: 100%"
+      ></progress> -->
+      <div id="divGrafico">
+        <!-- <hr /> -->
+        <canvas id="miGrafico"></canvas>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
